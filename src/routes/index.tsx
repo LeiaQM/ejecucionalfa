@@ -108,7 +108,7 @@ function Hero() {
             Un sistema de neurobiología diseñado para hombres atrapados en
             hábitos de bajo nivel, procrastinación y falta de enfoque.
           </p>
-          <div className="pt-4">
+          <div className="pt-4 flex justify-center lg:justify-start">
             <HotmartButton label="​" size="large" />
           </div>
           <div className="flex flex-wrap gap-x-8 gap-y-3 pt-4 text-sm text-white/60">
@@ -306,6 +306,25 @@ function Transformacion() {
   );
 }
 
+function FloatingBook() {
+  return (
+    <section className="relative py-24 px-6">
+      <div className="max-w-3xl mx-auto flex justify-center">
+        <div className="relative">
+          <div className="absolute inset-0 radial-cyan blur-3xl opacity-80 scale-125" />
+          <motion.img
+            src={bookCover}
+            alt="Ejecución Alfa libro"
+            className="relative w-full max-w-sm mx-auto"
+            animate={{ y: [0, -15, 0], rotate: [-1, 1, -1] }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Contenido() {
   const chapters = [
     { n: "01", title: "El Veneno Digital", text: "Analizaremos el \"veneno\" que le inyectas a tu sistema (scrolling, porno, videojuegos) y cómo limpiar la maquinaria mental." },
@@ -391,7 +410,7 @@ function Bonus() {
           ))}
         </div>
 
-        <motion.div {...fadeUp} className="text-center space-y-8">
+        <motion.div {...fadeUp} className="text-center space-y-8 flex flex-col items-center">
           <p className="font-display text-[clamp(1.8rem,4vw,3rem)] font-bold tracking-tight max-w-3xl mx-auto leading-tight">
             ESTÁS A UN PASO DE TU{" "}
             <span className="text-cyan-neon italic">NUEVA VERSIÓN.</span>
@@ -418,7 +437,7 @@ function PainCTA() {
         <motion.p {...fadeUp} className="text-white/50 max-w-xl mx-auto">
           Seguir distrayéndote también es una decisión. Tu mente ya sabe que necesitas cambiar.
         </motion.p>
-        <motion.div {...fadeUp}>
+        <motion.div {...fadeUp} className="flex justify-center">
           <HotmartButton label="​" size="large" />
         </motion.div>
       </div>
@@ -457,7 +476,7 @@ function FinalCTA() {
           <p className="text-white/60 text-sm tracking-wider">
             Acceso inmediato • Actualizaciones futuras • Formato digital
           </p>
-          <div className="pt-2">
+          <div className="pt-2 flex justify-center lg:justify-start">
             <HotmartButton label="​" size="large" />
           </div>
           <p className="text-white/40 text-sm italic text-center font-mono">
@@ -520,6 +539,7 @@ function LandingPage() {
         <MetodoAlfa />
         <SectionDivider />
         <Transformacion />
+        <FloatingBook />
         <SectionDivider />
         <Contenido />
         <SectionDivider />

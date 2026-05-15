@@ -7,11 +7,11 @@ declare global {
 }
 
 interface HotmartButtonProps {
-  label: string;
+  label?: string;
   size?: "default" | "large";
 }
 
-export function HotmartButton({ label, size = "default" }: HotmartButtonProps) {
+export function HotmartButton({ label = "", size = "default" }: HotmartButtonProps) {
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (window.hotmartLoaded) return;

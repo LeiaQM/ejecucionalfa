@@ -539,6 +539,7 @@ function LandingPage() {
         <MetodoAlfa />
         <SectionDivider />
         <Transformacion />
+        <FloatingBook />
         <SectionDivider />
         <Contenido />
         <SectionDivider />

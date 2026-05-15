@@ -11,7 +11,7 @@ interface HotmartButtonProps {
   size?: "default" | "large";
 }
 
-export function HotmartButton({ label = "", size = "default" }: HotmartButtonProps) {
+export function HotmartButton({ label = "SIGUE IGUAL O EJECUTA HOY", size = "default" }: HotmartButtonProps) {
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (window.hotmartLoaded) return;

@@ -466,7 +466,7 @@ function FinalCTA() {
           />
         </motion.div>
 
-        <motion.div {...fadeUp} className="order-1 lg:order-2 space-y-8">
+        <motion.div {...fadeUp} className="order-1 lg:order-2 space-y-8 flex flex-col items-center text-center">
           <Tag>Última llamada</Tag>
           <h2 className="font-display text-[clamp(2.5rem,6vw,5rem)] font-bold tracking-tight leading-[0.95]">
             TU NUEVA <br />
@@ -476,7 +476,7 @@ function FinalCTA() {
           <p className="text-white/60 text-sm tracking-wider">
             Acceso inmediato • Actualizaciones futuras • Formato digital
           </p>
-          <div className="pt-2 flex justify-center lg:justify-start">
+          <div className="pt-2 flex justify-center">
             <HotmartButton label="​" size="large" />
           </div>
           <p className="text-white/40 text-sm italic text-center font-mono">

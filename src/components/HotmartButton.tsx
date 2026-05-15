@@ -33,11 +33,11 @@ export function HotmartButton({ label = "", size = "default" }: HotmartButtonPro
       onClick={(e) => e.preventDefault()}
       href="https://pay.hotmart.com/M105834545M?checkoutMode=2"
       className="hotmart-fb hotmart__button-checkout text-center border-4 shadow-md border-[#69acb0] text-sm font-mono"
-      data-cta={label}
+      data-cta={label || undefined}
       style={size === "large" ? { fontSize: "1.15rem", padding: "1.4rem 3.2rem" } : undefined}
     >
       <img src="https://static.hotmart.com/img/btn-buy-green.png" alt="" />
-      <span style={{ position: "relative", zIndex: 2 }}>{label}</span>
+      {label ? <span style={{ position: "relative", zIndex: 2 }}>{label}</span> : null}
     </a>
   );
 }

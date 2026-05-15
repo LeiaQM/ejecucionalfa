@@ -105,7 +105,7 @@ function Hero() {
             </span>
           </div>
           <p className="text-lg md:text-xl text-white/70 max-w-xl leading-relaxed font-light">
-            Un sistema de neuroperformance diseñado para hombres atrapados en
+            Un sistema de neurobiología diseñado para hombres atrapados en
             hábitos de bajo nivel, procrastinación y falta de enfoque.
           </p>
           <div className="pt-4">
@@ -460,8 +460,8 @@ function FinalCTA() {
           <div className="pt-2">
             <HotmartButton label="​" size="large" />
           </div>
-          <p className="text-white/40 text-sm italic">
-            Tu nueva identidad depende de lo que hagas hoy.
+          <p className="text-white/40 text-sm italic text-center font-mono">
+            Un sistema de neurobiología diseñado para hombres atrapados en hábitos de bajo nivel, procrastinación y falta de enfoque.
           </p>
         </motion.div>
       </div>

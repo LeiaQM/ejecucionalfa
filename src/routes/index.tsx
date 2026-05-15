@@ -109,7 +109,7 @@ function Hero() {
             hábitos de bajo nivel, procrastinación y falta de enfoque.
           </p>
           <div className="pt-4 flex justify-center lg:justify-start">
-            <HotmartButton label="QUIERO EJECUTAR AHORA" size="large" />
+            <HotmartButton label="​" size="large" />
           </div>
           <div className="flex flex-wrap gap-x-8 gap-y-3 pt-4 text-sm text-white/60">
             {["Acceso inmediato", "Formato digital", "Lectura práctica"].map((t) => (
@@ -415,7 +415,7 @@ function Bonus() {
             ESTÁS A UN PASO DE TU{" "}
             <span className="text-cyan-neon italic">NUEVA VERSIÓN.</span>
           </p>
-          <HotmartButton label="QUIERO EJECUTAR AHORA" size="large" />
+          <HotmartButton label="​" size="large" />
         </motion.div>
       </div>
     </section>
@@ -438,7 +438,7 @@ function PainCTA() {
           Seguir distrayéndote también es una decisión. Tu mente ya sabe que necesitas cambiar.
         </motion.p>
         <motion.div {...fadeUp} className="flex justify-center">
-          <HotmartButton label="QUIERO EJECUTAR AHORA" size="large" />
+          <HotmartButton label="​" size="large" />
         </motion.div>
       </div>
     </section>
@@ -477,7 +477,7 @@ function FinalCTA() {
             Acceso inmediato • Actualizaciones futuras • Formato digital
           </p>
           <div className="pt-2 flex justify-center">
-            <HotmartButton label="QUIERO EJECUTAR AHORA" size="large" />
+            <HotmartButton label="​" size="large" />
           </div>
           <p className="text-white/40 text-sm italic text-center font-mono">
             Un sistema de neurobiología diseñado para hombres atrapados en hábitos de bajo nivel, procrastinación y falta de enfoque.

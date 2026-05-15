@@ -32,7 +32,7 @@ export function HotmartButton({ label, size = "default" }: HotmartButtonProps) {
     <a
       onClick={(e) => e.preventDefault()}
       href="https://pay.hotmart.com/M105834545M?checkoutMode=2"
-      className="hotmart-fb hotmart__button-checkout border-4 shadow-md border-[#69acb0] text-sm font-mono"
+      className="hotmart-fb hotmart__button-checkout text-center border-4 shadow-md border-[#69acb0] text-sm font-mono"
       data-cta={label}
       style={size === "large" ? { fontSize: "1.15rem", padding: "1.4rem 3.2rem" } : undefined}
     >

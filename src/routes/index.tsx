@@ -109,7 +109,7 @@ function Hero() {
             hábitos de bajo nivel, procrastinación y falta de enfoque.
           </p>
           <div className="pt-4 flex justify-center lg:justify-start">
-            <HotmartButton label="​" size="large" />
+            <HotmartButton size="large" />
           </div>
           <div className="flex flex-wrap gap-x-8 gap-y-3 pt-4 text-sm text-white/60">
             {["Acceso inmediato", "Formato digital", "Lectura práctica"].map((t) => (
@@ -415,7 +415,7 @@ function Bonus() {
             ESTÁS A UN PASO DE TU{" "}
             <span className="text-cyan-neon italic">NUEVA VERSIÓN.</span>
           </p>
-          <HotmartButton label="​" size="large" />
+          <HotmartButton size="large" />
         </motion.div>
       </div>
     </section>
@@ -438,7 +438,7 @@ function PainCTA() {
           Seguir distrayéndote también es una decisión. Tu mente ya sabe que necesitas cambiar.
         </motion.p>
         <motion.div {...fadeUp} className="flex justify-center">
-          <HotmartButton label="​" size="large" />
+          <HotmartButton size="large" />
         </motion.div>
       </div>
     </section>
@@ -448,41 +448,45 @@ function PainCTA() {
 function FinalCTA() {
   return (
     <section className="relative py-32 px-6">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="relative order-2 lg:order-1"
-        >
-          <div className="absolute inset-0 radial-cyan blur-3xl opacity-80 scale-110" />
-          <motion.img
-            src={bookCover}
-            alt="Ejecución Alfa libro"
-            className="relative w-full max-w-md mx-auto"
-            animate={{ y: [0, -15, 0], rotate: [-1, 1, -1] }}
-            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          />
-        </motion.div>
-
-        <motion.div {...fadeUp} className="order-1 lg:order-2 space-y-8 flex flex-col items-center text-center">
+      <div className="max-w-7xl mx-auto">
+        <motion.div {...fadeUp} className="text-center mb-16 flex flex-col items-center">
           <Tag>Última llamada</Tag>
-          <h2 className="font-display text-[clamp(2.5rem,6vw,5rem)] font-bold tracking-tight leading-[0.95]">
-            TU NUEVA <br />
-            IDENTIDAD <br />
+          <h2 className="font-display text-[clamp(2.5rem,6vw,5rem)] font-bold tracking-tight leading-[0.95] mt-6 text-center">
+            TU NUEVA IDENTIDAD <br />
             <span className="text-cyan-neon italic">EMPIEZA HOY.</span>
           </h2>
-          <p className="text-white/60 text-sm tracking-wider">
-            Acceso inmediato • Actualizaciones futuras • Formato digital
-          </p>
-          <div className="pt-2 flex justify-center">
-            <HotmartButton label="​" size="large" />
-          </div>
-          <p className="text-white/40 text-sm italic text-center font-mono">
-            Un sistema de neurobiología diseñado para hombres atrapados en hábitos de bajo nivel, procrastinación y falta de enfoque.
-          </p>
         </motion.div>
+
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="relative order-2 lg:order-1"
+          >
+            <div className="absolute inset-0 radial-cyan blur-3xl opacity-80 scale-110" />
+            <motion.img
+              src={bookCover}
+              alt="Ejecución Alfa libro"
+              className="relative w-full max-w-md mx-auto"
+              animate={{ y: [0, -15, 0], rotate: [-1, 1, -1] }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+            />
+          </motion.div>
+
+          <motion.div {...fadeUp} className="order-1 lg:order-2 space-y-8 flex flex-col items-center text-center">
+            <p className="text-white/60 text-sm tracking-wider">
+              Acceso inmediato • Actualizaciones futuras • Formato digital
+            </p>
+            <div className="pt-2 flex justify-center">
+              <HotmartButton size="large" />
+            </div>
+            <p className="text-white/40 text-sm italic text-center font-mono">
+              Un sistema de neurobiología diseñado para hombres atrapados en hábitos de bajo nivel, procrastinación y falta de enfoque.
+            </p>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

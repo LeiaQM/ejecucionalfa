@@ -10,14 +10,14 @@ import bonusPlan from "@/assets/bonus-plan.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ejecución Alfa — Sistema Neuroperformance Elite | Neuromastery" },
+      { title: "Ejecución Alfa — Sistema Neurobiología Elite | Neuromastery" },
       {
         name: "description",
         content:
-          "No te falta potencial. Te falta ejecución. Sistema de neuroperformance para hombres atrapados en hábitos de bajo nivel, procrastinación y falta de enfoque.",
+          "No te falta potencial. Te falta ejecución. Sistema de neurobiología para hombres atrapados en hábitos de bajo nivel, procrastinación y falta de enfoque.",
       },
       { property: "og:title", content: "Ejecución Alfa — Neuromastery" },
-      { property: "og:description", content: "Sistema neuroperformance elite. Ejecuta o sigue igual." },
+      { property: "og:description", content: "Sistema neurobiología elite. Ejecuta o sigue igual." },
     ],
   }),
   component: LandingPage,
@@ -101,11 +101,11 @@ function Hero() {
           <div className="flex items-center gap-4">
             <div className="w-12 h-px bg-[#00EAFF] shadow-[0_0_10px_#00EAFF]" />
             <span className="text-[11px] tracking-[0.3em] font-semibold text-[#00EAFF] uppercase">
-              Sistema Neuroperformance Elite
+              Sistema Neurobiología Elite
             </span>
           </div>
           <p className="text-lg md:text-xl text-white/70 max-w-xl leading-relaxed font-light">
-            Un sistema de neuroperformance diseñado para hombres atrapados en
+            Un sistema de neurobiología diseñado para hombres atrapados en
             hábitos de bajo nivel, procrastinación y falta de enfoque.
           </p>
           <div className="pt-4">
@@ -460,8 +460,8 @@ function FinalCTA() {
           <div className="pt-2">
             <HotmartButton label="​" size="large" />
           </div>
-          <p className="text-white/40 text-sm italic">
-            Tu nueva identidad depende de lo que hagas hoy.
+          <p className="text-white/40 text-sm italic text-center font-mono">
+            Un sistema de neurobiología diseñado para hombres atrapados en hábitos de bajo nivel, procrastinación y falta de enfoque.
           </p>
         </motion.div>
       </div>
